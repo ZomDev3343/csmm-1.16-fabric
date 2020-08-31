@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "csmm",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Créer Son Mod Minecraft 1.16 Fabric",
+  "description": "Mod réalisé dans le cadre de la série de tutos 'Créer Son Mod Minecraft 1.16 Fabric' sur la chaîne YouTube Zom'",
   "authors": [
-    "Me!"
+    "Zom'"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "contact.zomzd@gmail.com",
+    "sources": "https://github.com/ZomDev3343/csmm-1.16-fabric"
   },
 
   "license": "CC0-1.0",
@@ -19,11 +19,11 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "fr.zom.csmm.CSMM"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "csmm.mixins.json"
   ],
 
   "depends": {
