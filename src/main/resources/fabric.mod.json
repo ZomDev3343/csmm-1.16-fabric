@@ -20,6 +20,12 @@
   "entrypoints": {
     "main": [
       "fr.zom.csmm.CSMM"
+    ],
+    "client": [
+      "fr.zom.csmm.client.CSMMClient"
+    ],
+    "server": [
+      "fr.zom.csmm.server.CSMMServer"
     ]
   },
   "mixins": [
