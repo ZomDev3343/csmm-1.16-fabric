@@ -1,6 +1,7 @@
 package fr.zom.csmm.init;
 
 import fr.zom.csmm.CSMM;
+import fr.zom.csmm.blocks.BlockRedEmeraldBlock;
 import fr.zom.csmm.utils.Utils;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
@@ -17,11 +18,12 @@ public class ModBlocks {
     public static final ModBlocks INSTANCE = new ModBlocks();
 
     public static final Block BLUE_EMERALD_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).breakByTool(FabricToolTags.PICKAXES, 2).requiresTool().strength(3f, 15f));
-
+    public static final Block RED_EMERALD_BLOCK = new BlockRedEmeraldBlock();
 
     public void registerAll()
     {
         register(BLUE_EMERALD_BLOCK, new Identifier(Utils.MODID, "blue_emerald_block"));
+        register(RED_EMERALD_BLOCK, new Identifier(Utils.MODID, "red_emerald_block"));
     }
 
     private void register(Block block, Identifier name)
